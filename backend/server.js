@@ -26,6 +26,11 @@ connection.once('open', () =>
 })
 
 
+const itemRouter = require('./routes/item')
+
+// this is the route at end of ther server request
+app.use('/item',itemRouter)
+
 app.listen(port, ()=>
 {
     console.log(`Server is running on port: ${port}`)
