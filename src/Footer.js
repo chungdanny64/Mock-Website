@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 class Footer extends Component{
     render(){
@@ -12,37 +13,37 @@ class Footer extends Component{
                         
                         <ul>
                             <li  className = 'footer-list'>
-                                My Account
+                                <Link to= '/NotFound'>My Account</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Join PacSun Rewards
+                                <Link to= '/NotFound'>Join PacSun Rewards</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Styled By Pacsun
+                                <Link to= '/NotFound'>Styled By Pacsun</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Gift Cards
+                                <Link to= '/NotFound'>Gift Cards</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Coupons & Promotions
+                                <Link to= '/NotFound'>Coupons & Promotions</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Afterpay
+                                <Link to= '/NotFound'>Afterpay</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Student Discount
+                                <Link to= '/NotFound'>Student Discount</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Customer Service
+                                <Link to= '/NotFound'>Customer Service</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Returns & Exchanges
+                                <Link to= '/NotFound'>Returns & Exchanges</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Order Status
+                                <Link to= '/NotFound'>Order Status</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                International Shipping
+                                <Link to= '/NotFound'>International Shipping</Link>
                             </li>
                         </ul>
                     </div>
@@ -53,31 +54,31 @@ class Footer extends Component{
                         </div> 
                         <ul>
                             <li  className = 'footer-list'>
-                                About Us
+                                <Link to= '/NotFound'>About Us</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Store Locator
+                                <Link to= '/NotFound'>Store Locator</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Careers
+                                <Link to= '/NotFound'>Careers</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Social Responsibility
+                                <Link to= '/NotFound'>Social Responsibility</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                California Supply Chains Act
+                                <Link to= '/NotFound'>California Supply Chains Act</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Privacy & Cookie Piolicy 
+                                <Link to= '/NotFound'>Privacy & Cookie Piolicy</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Terms of Use
+                                <Link to= '/NotFound'>Terms of Use</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Affiliate Program
+                                <Link to= '/NotFound'>Affiliate Program</Link>
                             </li>
                             <li  className = 'footer-list'>
-                                Site Map
+                                <Link to= '/NotFound'>Site Map</Link>
                             </li>
                         </ul>
                     </div>
@@ -104,12 +105,12 @@ class Footer extends Component{
                         </div>
                         <div className= 'footer-text'>
                             California Residents: I agree to opt-in to financial incentives offered by PacSun.
-                            For more information about this including material terms please visit <u>our Privacy Policy.</u>
+                            For more information about this including material terms please visit <u><Link to = '/NotFound'>our Privacy Policy.</Link></u>
                         </div>
                         <div className = 'footer-text'>
                             Yes, I would like to receive updates from PacSun for:
                         </div>
-                        <form>
+                        <form style ={{paddingTop: '3px'}}>
                             <input type='radio' id= 'Mens'></input>
                             <label > Mens</label>
                             <input type='radio' id= 'Womens'></input>
@@ -140,7 +141,11 @@ class Footer extends Component{
                 </div>
                 
                 <div className = 'footer-bottom'>
-                    hey
+                    Information for California Residents: Visit the <u>Privacy Policy</u> for details regarding the categories
+                    of personal information callected through this website and the business and commercial purpose(s) for which 
+                    the information will be used.
+                    <br></br>
+                    2020 Pacific Sunwear of California, LLC. All rights reserved.
                 </div>
             </div>
         )

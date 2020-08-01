@@ -3,10 +3,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const itemSchema = new Schema({
-    name: {
-        type: String,
-        required: true
-    },
+
 
     image1:{
         type: String,
@@ -35,7 +32,15 @@ const itemSchema = new Schema({
     },
 
     price:{
-        type: Number,
+        type: String,
+        required: true
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    color:{
+        type:String,
         required: true
     }
 

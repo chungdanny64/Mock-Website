@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import Login from './Login.PNG'
+import Dropdown from './Dropdown'
+import {Link} from 'react-router-dom'
 
 
 class Searchbar extends Component{
@@ -23,29 +25,50 @@ class Searchbar extends Component{
                                 </div>
                             </div>
 
-                            <ul className = 'bottom-content'>
-                                <li className = 'categories' id ='Men'>
-                                    Men
-                                </li>
-                                <li className = 'categories'>
-                                    Women
-                                </li>
-                                <li className = 'categories'>
-                                    Jeans
-                                </li>
-                                <li className = 'categories'>
-                                    Swim
-                                </li>
-                                <li className = 'categories'>
-                                    Home
-                                </li>
-                                <li className = 'categories'>
-                                    Brands
-                                </li>
-                                <li className = 'categories' style= {{color: 'red'}}>
-                                    Sale
-                                </li>
-                            </ul>
+                            <div className = 'bottom-content'>
+                                <div className= 'categories'>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Men</Link>
+                                        <div className= 'drop-down'>
+                                            <div className = 'drop-down-content'>
+                                                <Dropdown title= {'Clothing'}
+                                                    items = {[
+                                                        'Shop All', 'Graphics & Tees', 'Hoodies & Sweatshirts', 'Basic Tees',
+                                                        'Shorts', 'Pants', 'Jeans', 'Sweatpants', 'VIEW  MORE'
+                                                    ]}/>
+                                            </div>
+                                            <div className = 'drop-down-content'>
+                                                <Dropdown title= {'Accessories'} items={['Shop All', 'Face Masks',
+                                                    'Hats & Beanies', 'Wellness', 'Backpacks & Sling Bags', 'VIEW MORE'
+                                                    ]}/>
+                                            </div>
+ 
+                                        </div>
+                                    </div>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Women</Link>
+                                    </div>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Jeans</Link>
+                                    </div>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Swim</Link>
+                                    </div>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Home</Link>
+                                    </div>
+                                    <div className = 'type'>
+                                        <Link to= '/NotFound'>Brands</Link>
+                                    </div>
+                                    <div className = 'type' >
+                                        <Link to= '/NotFound' style = {{color:'red'}}>Sale</Link>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 

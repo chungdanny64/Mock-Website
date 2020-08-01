@@ -7,13 +7,15 @@ class ItemPage extends Component{
 
         // item properties that will be on screen
         this.state = {
-            Item_name : '',
+            Name : '',
             First_image : '',
             Second_image : '',
             Third_image: '',
             Fourth_image: '',
             Fifth_image: '',
-            Sixth_image: ''   
+            Sixth_image: '',
+            Price: '',
+            Color: ''   
         }
     }
 
