@@ -5,12 +5,18 @@ import Searchbar from './Searchbar'
 import Footer from './Footer'
 
 class ItemDisplay extends Component{
+    constructor(props){
+        super(props)
+
+    }
+
+
     render(){
         return(
         <div>
             <TopBar/>
             <Searchbar/>
-            <ItemPage/>
+            <ItemPage item = {this.props}/>
             <Footer/>
         </div>
             

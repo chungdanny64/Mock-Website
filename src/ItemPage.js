@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
+import axios from 'axios'
 
 
 class ItemPage extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         // item properties that will be on screen
         this.state = {
@@ -20,7 +21,21 @@ class ItemPage extends Component{
     }
 
     componentDidMount(){
-        // put in an item for it to bind the state to
+        axios.get('http://localhost:5000/item/' + this.props.item.match.params.id)
+            .then(res =>{
+                this.setState({
+                    Name : res.data.name,
+                    First_image : res.data.image1,
+                    Second_image : res.data.image2,
+                    Third_image: res.data.image3,
+                    Fourth_image: res.data.image4,
+                    Fifth_image: res.data.image5,
+                    Sixth_image: res.data.image6,
+                    Price: res.data.price,
+                    Color: res.data.color
+                })
+            })
+            .catch(err => console.log(err))
     }
 
 
@@ -28,7 +43,8 @@ class ItemPage extends Component{
     render(){
         return(
             <div>
-                ItemPage
+                <img src= {this.state.Sixth_image} alt = 'sixthimage'/>
+                {this.state.Name}
             </div>
         )
     }

@@ -3,7 +3,7 @@ import TopBar from './TopBar'
 import Searchbar from './Searchbar'
 import Footer from './Footer'
 import axios from 'axios'
-import { QueryCursor } from 'mongoose'
+import {Link} from 'react-router-dom'
 
 
 class AllItems extends Component{
@@ -28,13 +28,23 @@ class AllItems extends Component{
     }
 
 
-
+    // the Link tag sends the user to the route with path /item/id which is 
+    // the ItemDisplay file
+    // We then have to send that prop to the ItemPage file to actually set the state
+    // display the product. If you don't send it to the ItemPage we can't find the props
     GetItems(){
-        return this.state.items.map(curr =>{
-            return <div>
-                <img src={curr.image1} alt = 'first_image'/>
-            </div>
-        })
+        return this.state.items.map(curr =>{ 
+            return <div className = 'item-holder'>
+                    <img src={curr.image6} alt = 'first_image'/>
+                    <p>
+                        
+                        <Link to = {"/item/" + curr._id}  ><b>{curr.name}</b></Link>
+                        <br></br>
+                        {curr.price}
+                    </p>
+
+                </div>
+            })
     }
 
 
@@ -46,7 +56,7 @@ class AllItems extends Component{
             <div>
                 <TopBar/>
                 <Searchbar/>
-                <div>
+                <div className = 'all-items'>
                     {this.GetItems()}
                 </div>
                 <Footer/>
