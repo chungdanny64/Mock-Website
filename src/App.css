@@ -101,53 +101,86 @@ ul:hover{
   justify-content: center;
 }
 
-.type div{
+
+.type .drop-down {
   display: none;
   position: absolute;
-  padding-top:15px;
+  padding-top:25px;
   max-height: 400px;
   min-height: 319px;
   max-width: 1330px;
   text-align: left;
-  width:100vw;
-
+  width:100vw !important;
+  left: 0px;
+  top: 51px;
+  background-color: white;
+  border-top: 1px solid grey;
 }
 
 
-.type:hover div{
+.type:hover .drop-down {
   display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
 }
-/* get rid of this class when finished positioning*/
-.drop-down{
-  display:flex;
+
+.item-box li a:hover{
+  font-weight: bold;
 }
 
 .drop-down-content{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
   height: 100%;
+  left:0;
+  top:0;
 }
 
+.brands-header{
+  padding: 0px 2.5% 0px 2.5%;
+}
+.drop-down-content img{
+  height: 78%;
+  width: 150px;
+  
+}
 
 .item-box{
+  padding-left: 5%;
   height:100%;
-
+  display:flex;
+  flex-direction: column;
 }
 
+.title-holder{
+  border-bottom: 1px solid grey;
+}
 
-
+.sale-picture{
+  width:100% !important;
+  height:60% !important;
+  padding: 0px 3% 0px 3%;
+}
 
 .categories{
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content:space-evenly;
   text-align: center;
   align-items: center;
-  flex-direction: sp;
+  justify-content: center;
   padding: 15px 2em;
   position: relative;
   color: black; 
   font-size: 12.5px;
   padding: 0;
-  
+}
+
+.search-link a{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 19px;
 }
 
 .type:hover{
@@ -195,7 +228,7 @@ ul:hover{
 }
 
 
-.footer-list:hover {
+.footer-list:hover{
   text-decoration: underline;
 }
 
@@ -236,3 +269,59 @@ ul:hover{
 .item-holder p:hover b{
   text-decoration: underline;
 }
+
+.item-page{
+  height: 110vh;
+  width: 100%;
+  display: flex; 
+
+}
+
+.product-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+}
+
+.product-inner{
+  display: flex;
+  height: 90%;
+  width: 85%;
+}
+
+.product-images{
+  height: 100%;
+  width: 50%;
+}
+
+.product-description{
+  height: 100%;
+  width: 50%;
+}
+
+.product-description-inner{
+  display:flex;
+  flex-direction: column;
+  padding: 6% 0px 0% 17%;
+  height: 100%;
+}
+.logo img{
+  height: 20px !important;
+  width: 160px !important;
+}
+
+.product-name{
+  padding-top: 3%;
+}
+
+.large-product-image{
+  height:100%;
+  width: 60%;
+}
+.large-product-image img{
+  height: 90%;
+  width: 100%;
+}
+

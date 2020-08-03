@@ -25,6 +25,7 @@ class AllItems extends Component{
                 })
             })
             .catch(err => console.log(err))
+        console.log('hello')
     }
 
 
@@ -55,7 +56,7 @@ class AllItems extends Component{
         return(
             <div>
                 <TopBar/>
-                <Searchbar/>
+                <Searchbar/>    
                 <div className = 'all-items'>
                     {this.GetItems()}
                 </div>

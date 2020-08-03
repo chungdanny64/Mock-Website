@@ -27,21 +27,29 @@ class Dropdown extends Component{
 
     display(){
         return this.state.categories.map(curr =>{
-            console.log(curr)
             return <DropdownItem name = {curr}/>
         })
     }
     render(){
         return(
+
+            this.state.title !== "" ? 
+
             <div className = 'item-box'>
-                {this.state.title}
-                
+                <div className = 'title-holder'>
+                    <b>{this.state.title}</b>   
+                </div>       
                 <br></br>
-                <ul>
                     {this.display()}
-                </ul>
                 
             </div>
+
+            :
+
+            <div className = 'item-box'>     
+                {this.display()}
+            </div>
+
         )
     }
 }

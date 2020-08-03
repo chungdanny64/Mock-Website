@@ -8,6 +8,7 @@ class TopBar extends Component{
 
 
         return(
+            
             <div className = 'top'>
                 <div className = 'top-of-bar'>
                     <div className = 'bar-content'>
@@ -20,6 +21,7 @@ class TopBar extends Component{
                 </div>
             </div>
             
+
 
         )
     }
