@@ -21,7 +21,7 @@ class Dropdown extends Component{
     componentDidMount(){
             this.setState({
                 categories: this.props.items,
-                title : this.props.title
+                title : this.props.title,
             })
     }
 
@@ -31,11 +31,13 @@ class Dropdown extends Component{
         })
     }
     render(){
+
+
         return(
 
             this.state.title !== "" ? 
 
-            <div className = 'item-box'>
+            <div className = 'item-box' >
                 <div className = 'title-holder'>
                     <b>{this.state.title}</b>   
                 </div>       

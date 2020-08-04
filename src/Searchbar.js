@@ -43,7 +43,10 @@ class Searchbar extends Component{
                                                     items = {[
                                                         'Shop All', 'Graphics & Tees', 'Hoodies & Sweatshirts', 'Basic Tees',
                                                         'Shorts', 'Pants', 'Jeans', 'Sweatpants', 'VIEW  MORE'
-                                                    ]}/>
+                                                    ]}
+                                                    
+
+                                                    />
                                             </div>
 
                                             <div className = 'drop-down-content'>

@@ -132,11 +132,15 @@ ul:hover{
 .drop-down-content{
   display: flex;
   flex-direction: column;
+  text-align: left;
   width: 25%;
   height: 100%;
   left:0;
   top:0;
 }
+
+
+
 
 .brands-header{
   padding: 0px 2.5% 0px 2.5%;
@@ -152,6 +156,7 @@ ul:hover{
   height:100%;
   display:flex;
   flex-direction: column;
+  flex-wrap:wrap;
 }
 
 .title-holder{
@@ -274,6 +279,7 @@ ul:hover{
   height: 110vh;
   width: 100%;
   display: flex; 
+  justify-content: center;
 
 }
 
@@ -283,6 +289,7 @@ ul:hover{
   align-items: center;
   height: 75%;
   width: 100%;
+  max-width:1330px;
 }
 
 .product-inner{
@@ -294,6 +301,8 @@ ul:hover{
 .product-images{
   height: 100%;
   width: 50%;
+  display: flex;
+  padding-top: 2.2%;
 }
 
 .product-description{
@@ -316,12 +325,59 @@ ul:hover{
   padding-top: 3%;
 }
 
-.large-product-image{
+.image-carousel{
+  width:30%;
   height:100%;
-  width: 60%;
+  display:flex;
+  flex-direction: column;
+  margin:0;
 }
-.large-product-image img{
+
+.image-carousel-content img{
+  height: 148px;
+  width:98px;
+  margin:0;
+  padding: 0px 5px 5px 47%;
+}
+.large-product-image{
+  right:0;
+  bottom:0;
+  height:100%;
+  width: 100%;
+  max-width: 440px;
+  padding-left:5%;
+}
+.carousel{
   height: 90%;
   width: 100%;
 }
+.large-product-image img{
+  height: 93%;
+}
 
+.image-carousel img{
+  height: 151px;
+  width: 98px;
+  margin:0;
+  padding-bottom: 3%;
+}
+
+.carousel{
+  display:flex;
+  height:93%;
+  flex-direction: column;
+  padding-left: 85px;
+  overflow:hidden;
+}
+
+.image-carousel img:hover{
+  cursor: pointer;
+}
+
+.next-button{
+  width:98px;
+  height: 45px;
+  position:absolute;
+  bottom:32px;
+  opacity: 0.7;
+}

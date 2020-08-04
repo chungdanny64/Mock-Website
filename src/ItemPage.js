@@ -18,8 +18,12 @@ class ItemPage extends Component{
             Fifth_image: '',
             Sixth_image: '',
             Price: '',
-            Color: ''   
+            Color: '',
+            images: [] ,
+            index: 0
         }
+        this.clickButton = this.clickButton.bind(this)
+        this.imageClick = this.imageClick.bind(this)
     }
 
     componentDidMount(){
@@ -34,7 +38,9 @@ class ItemPage extends Component{
                     Fifth_image: res.data.image5,
                     Sixth_image: res.data.image6,
                     Price: res.data.price,
-                    Color: res.data.color
+                    Color: res.data.color,
+                    images : [res.data.image1, res.data.image2, res.data.image3,
+                         res.data.image4, res.data.image5, res.data.image6]
                 })
             })
             .catch(err => console.log(err))
@@ -44,17 +50,44 @@ class ItemPage extends Component{
         let e = Number(this.state.Price.substring(1)) /4
         return e.toFixed(2)
     }
-// <img src= {this.state.Sixth_image} alt = 'sixthimage'/>
-// {this.state.Name}
 
+    show_images(place){
+        let x = place
+        let images = []
+        for(let y = x; y < x+5;y ++){
+            images.push(<img src = {this.state.images[y%6]} id = {y%6} onClick = {this.imageClick}></img>)
+        }
+        return images
+    }
+
+    clickButton(){
+        this.setState({
+            index: this.state.index+1
+        })
+    }
+    
+    imageClick(event){
+        console.log(event.currentTarget.id)
+        this.setState({
+            index : event.currentTarget.id
+        })
+    }
+    
     render(){
+        
         return(
             <div className = 'item-page'>
                 <div className = 'product-container'>
                     <div className = 'product-inner'>
                         <div className = 'product-images'>
+                            <div className = 'image-carousel'>
+                                <div className = 'carousel'>
+                                    {this.show_images(this.state.index)}
+                                    <button className = 'next-button' onClick= {this.clickButton}>Next</button>
+                                </div>
+                            </div>
                             <div className = 'large-product-image'>
-                                <img src = {this.state.Sixth_image}></img>
+                                <img src = {this.state.images[this.state.index%6]}></img>
                             </div>
                             
                         </div>
@@ -81,7 +114,6 @@ class ItemPage extends Component{
                                     <form>
                                         <select id = 'size' placeholder = 'SELECT A SIZE'>
                                             <option>SELECT SIZE</option>
-                                            <option value = '26W X 28L'>26W X 28L</option>
                                             <option >26W X 28L</option>
                                             <option >28W X 30L</option>
                                             <option >28W X 32L</option>
