@@ -2,6 +2,13 @@ import React, {Component} from 'react'
 import Login from './Login.PNG'
 import Dropdown from './Dropdown'
 import {Link} from 'react-router-dom'
+import Logo from './Logo.jpg'
+import Heart from './Search_Images/heart.png'
+import Bag from './Search_Images/Bag.png'
+import Account from './Search_Images/Account.png'
+import Flag from './Search_Images/Flag.png'
+import Location from './Search_Images/Location.png'
+
 
 
 class Searchbar extends Component{
@@ -16,12 +23,41 @@ class Searchbar extends Component{
                         <div className = 'sticky-search'>
                             <div className = 'top-content'>
                                 <div className = 'left-header'>
-                                    <img src= {Login} alt= 'login' style ={{paddingRight: '15px',  height : '20px', width: '20px'}}>
-                                    </img>
-                                    <img src= {Login} alt= 'Location' style ={{paddingRight: '15px', paddingLeft: '15px',  height : '20px', width: '20px' }}>
-                                    </img>
-                                    <img src= {Login} alt= 'Country' style ={{ paddingLeft: '15px',  height : '20px', width: '20px'}}>
-                                    </img>
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src= {Account} alt= 'login' style ={{  height : '20px', width: '20px'}} onClick = {<Link to='/NotFound'></Link>}>
+                                        </img>
+                                    </a>
+
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src= {Location} alt= 'Location' style ={{  height : '20px', width: '13px' }}>
+                                        </img>
+                                    </a>
+
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src= {Flag} alt= 'Country' style ={{  height : '16px', width: '20px'}}>
+                                        </img>
+                                    </a>
+                                    
+                                </div>
+
+                                <div className = 'center-logo'>
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src = {Logo} alt = "big-logo"></img>
+                                    </a>
+                                </div>
+
+                                <div className = 'right-header'>
+                                    <form>
+                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px'}}></input>
+                                        <button type="submit">M</button>
+                                    </form>
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src = {Heart} alt = 'heart'></img>
+                                    </a>
+                                    
+                                    <a href = 'http://localhost:3000/NotFound'>
+                                        <img src = {Bag} alt = 'Bag'></img>
+                                    </a>
                                 </div>
                             </div>
 
