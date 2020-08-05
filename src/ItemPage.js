@@ -55,7 +55,7 @@ class ItemPage extends Component{
         let x = place
         let images = []
         for(let y = x; y < x+5;y ++){
-            images.push(<img src = {this.state.images[y%6]} id = {y%6} onClick = {this.imageClick}></img>)
+            images.push(<img src = {this.state.images[y%6]} id = {y%6} onClick = {this.imageClick} alt = {'image' + y}></img>)
         }
         return images
     }
@@ -87,14 +87,14 @@ class ItemPage extends Component{
                                 </div>
                             </div>
                             <div className = 'large-product-image'>
-                                <img src = {this.state.images[this.state.index%6]}></img>
+                                <img src = {this.state.images[this.state.index%6]} alt = 'big-version'></img>
                             </div>
                             
                         </div>
                         <div className = 'product-description'>
                             <div className = 'product-description-inner'>
                                 <div className = 'logo'>
-                                    <img src ={Logo}></img>
+                                    <img src ={Logo} alt = 'logo'></img>
                                 </div>
                                 <div className  = 'product-name'>
                                     {this.state.Name}  
