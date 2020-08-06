@@ -39,7 +39,7 @@ class Dropdown extends Component{
 
             <div className = 'item-box' >
                 <div className = 'title-holder'>
-                    <b>{this.state.title}</b>   
+                    <Link to = "/NotFound"><b>{this.state.title}</b>  </Link> 
                 </div>       
                 <br></br>
                     {this.display()}

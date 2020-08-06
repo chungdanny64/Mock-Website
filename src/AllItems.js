@@ -11,8 +11,11 @@ class AllItems extends Component{
         super()
 
         this.state = {
-            items : []
+            items : [],
+
         }
+
+     
     }
 
 
@@ -25,9 +28,9 @@ class AllItems extends Component{
                 })
             })
             .catch(err => console.log(err))
-        console.log('hello')
+        
+        
     }
-
 
     // the Link tag sends the user to the route with path /item/id which is 
     // the ItemDisplay file
@@ -54,7 +57,7 @@ class AllItems extends Component{
 
     render(){
         return(
-            <div>
+            <div >
                 <TopBar/>
                 <Searchbar/>    
                 <div className = 'all-items'>

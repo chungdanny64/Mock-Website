@@ -170,7 +170,10 @@ ul:hover{
   top:0;
 }
 
-
+.drop-down-content a:hover{
+  color:black;
+  font-weight: lighter;
+}
 
 
 .brands-header{
