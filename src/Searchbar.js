@@ -12,8 +12,9 @@ import Location from './Search_Images/Location.png'
 
 class Searchbar extends Component{
 
-  
+ 
     render(){
+        
 
         return(
             <div className = 'search-holder'>
