@@ -340,7 +340,15 @@ class Searchbar extends Component{
                                                             items = {[
                                                                 'A$AP Worldwide', 'adidas' , 'Brixton', 'Budweiser', 'Champion',
                                                                 'Columbia' , 'Converse' , 'Dr Martens', 'FOG', 'Guess', 'Huf' ,
-                                                                'Kappa', 'New Balance' ,'Obey', 'PacSun' ,'Playboy', 'Polo Ralph Lauren',
+                                                                'Kappa', 'New Balance' ,'Obey'
+                                                ]}/>
+                            
+                                            </div>
+
+                                            <div className = 'drop-down-content'>
+                                                <Dropdown title = {''}
+                                                items = {[
+                                                     'PacSun' ,'Playboy', 'Polo Ralph Lauren',
                                                                 'PS Basics', 'Reebok', 'RVCA', 'Santa Cruz', 'The North Face', 'Vans', 'Young & Reckless', 
                                                                 'Top Brands', 'Shop All Brands'
                                                 ]}/>
@@ -365,9 +373,16 @@ class Searchbar extends Component{
                                                             items = {[
                                                                 'adidas', 'Billabong' , 'Brandy Melville', 'Champion', 'Converse', 
                                                                 'Desert Dreamers' , 'Espirit', 'Free People', 'Guess', 'John Galt', 'Kendall & Kylie', 
-                                                                'LA Hearts', "Levi's", 'Lottie Moss', 'Me To We', 'MinkPink' , 'Modern Renewal',
-                                                                'PacSun', 'Playboy', 'PS Basics', 'PS / LA', 'Rhythm', 'The North Face', 'Tommy Hilfiger', 
-                                                                'Vans', 'Top Brands', 'Shop All Brands'
+                                                                'LA Hearts', "Levi's", 'Lottie Moss'
+                                                ]}/>
+                                            </div>
+
+                                            <div className = 'drop-down-content'>
+                                                <Dropdown title = {''}
+                                                items = {[
+                                                    'Me To We', 'MinkPink' , 'Modern Renewal',
+                                                    'PacSun', 'Playboy', 'PS Basics', 'PS / LA', 'Rhythm', 'The North Face', 'Tommy Hilfiger', 
+                                                    'Vans', 'Top Brands', 'Shop All Brands'
                                                 ]}/>
                                             </div>
                                         </div> 
@@ -381,7 +396,7 @@ class Searchbar extends Component{
                                         
 
                                         <div className = 'drop-down'>
-                                            <div className = 'drop-down-content'>
+                                            <div className = 'drop-down-content' >
                                                 <Dropdown title= {"Men's Sale"}
                                                             items = {[
                                                                 'Markdowns - Up to 50% Off', 'Denim & Pants', 'Graphics & Knits' , 'Shirts',
@@ -389,7 +404,7 @@ class Searchbar extends Component{
                                                 ]}/>
                                             </div>
                                             
-                                            <div className = 'drop-down-content'>
+                                            <div className = 'drop-down-content' >
                                                 <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw3e9ba07b/2020/floorsets/07/13/megaBanner.jpg'
                                                 className = 'sale-picture' alt = 'sale-img'></img>
                                             </div>
@@ -397,7 +412,7 @@ class Searchbar extends Component{
 
 
 
-                                            <div className = 'drop-down-content'>
+                                            <div className = 'drop-down-content' >
                                                 <Dropdown title= {"Women's Sale"}
                                                             items = {[
                                                                 'Markdowns - Up to 50% Off', 'Denim & Pants' , 'Tops & Graphics', 'Sweaters',
