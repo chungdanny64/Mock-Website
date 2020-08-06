@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 import Logo from './Logo.jpg'
 import {Link} from 'react-router-dom'
+import afterpay from './Footer_Images/afterpay.png'
 
 
 class ItemPage extends Component{
@@ -97,13 +98,15 @@ class ItemPage extends Component{
                                     <img src ={Logo} alt = 'logo'></img>
                                 </div>
                                 <div className  = 'product-name'>
-                                    {this.state.Name}  
+                                    <b>{this.state.Name}</b>
                                 </div>
                                 <div className = 'product-price'>
                                     {this.state.Price}
                                 </div>
+
+                                <br></br>
                                 <div className = 'after-pay'>
-                                    Or 4 payments of {this.calculate()} with afterpay
+                                    Or 4 payments of ${this.calculate()} by <img src = {afterpay} alt =''></img>  <Link to ='/NotFound'>Learn More</Link>
                                 </div>
 
                                 <div className = 'product-color'>
@@ -113,7 +116,7 @@ class ItemPage extends Component{
                                 <div className = 'size-selector'>
                                     <form>
                                         <select id = 'size' placeholder = 'SELECT A SIZE'>
-                                            <option>SELECT SIZE</option>
+                                            <option>Select Size</option>
                                             <option >26W X 28L</option>
                                             <option >28W X 30L</option>
                                             <option >28W X 32L</option>
@@ -124,20 +127,31 @@ class ItemPage extends Component{
                                             <option >31W X 30L</option>
                                             <option >31W X 32L</option>
                                         </select>
-                                        <div calssName = 'size-link'>
-                                            <u><Link to ='/NotFound'>Size Guide</Link></u>
-                                        </div>
-
-                                        <button>ADD TO BAG</button>
-                                        <br></br>
-                                        <button>PICK UP IN STORE</button>
-                                        
-                                        <div className = 'color-size-text'>
-                                            Select a color and size to see in-store availability
-                                            <br></br>
-                                            <u><Link to = '/NotFound'>Shop All Pacsun</Link></u>
-                                        </div>
                                     </form>
+                                        
+                                    <div className = 'size-link'>
+                                        <u><Link to ='/NotFound'>Size Guide</Link></u>
+                                    </div>
+                                    
+                                    <div className = 'add-to-bag'>
+                                        <button >ADD TO BAG</button>
+                                    </div>
+                                    <div className = 'pick-up'>
+                                        <button>PICK UP IN STORE</button>
+                                    </div>
+                                    
+                                    
+                                    <div className = 'color-size-text'>
+                                        <p>
+                                            Select a color and size to see in-store availability
+                                        </p>
+                                        <p>
+                                            <u><Link to = '/NotFound'>Shop All Pacsun</Link></u>
+                                        </p>
+                                        <br></br>
+                                       
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

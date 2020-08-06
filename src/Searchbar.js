@@ -28,7 +28,7 @@ class Searchbar extends Component{
                                     </a>
 
                                     <a href = 'http://localhost:3000/NotFound'>
-                                        <img src= {Location} alt= 'Location' style ={{  height : '20px', width: '13px' }}>
+                                        <img src= {Location} alt= 'Location' style ={{  height : '20px', width: '13px', opacity: '0.6'}}>
                                         </img>
                                     </a>
 
@@ -47,7 +47,7 @@ class Searchbar extends Component{
 
                                 <div className = 'right-header'>
                                     <form>
-                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px'}}></input>
+                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px'}}></input>
                                         <button type="submit">M</button>
                                     </form>
                                     <a href = 'http://localhost:3000/NotFound'>

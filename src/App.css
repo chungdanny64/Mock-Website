@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 li{
   list-style-type: none;
   height: 24px
+}
+
+body{
+  font-family :  "DM Sans",sans-serif ;
 }
 
 ul{
@@ -12,15 +18,28 @@ a{
   color: black;
   text-decoration: none;
 }
+
+input{
+  border: 1px solid #ccc;
+}
+
 ul:hover{
   cursor: pointer
 }
 
 
-.top,.bar-content,.bottom-of-top-bar{
+.top,.bar-content{
   display:flex;
   align-items: center;
   justify-content: center;
+}
+
+.bottom-of-top-bar{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-top:1px solid white;
+  
 }
 
 
@@ -36,9 +55,9 @@ ul:hover{
   height: 40px;
   width: 100%;
   display: flex;
-  border-bottom:1px solid white;
   position: sticky;
   top:0px;
+  background-color: black;
 }
 
 .bar-content{
@@ -237,15 +256,32 @@ ul:hover{
   flex-direction: column;
   align-items: center;
   padding-top: 49px;
-  height: 512px;
+  height:53vh;
   width: 100%;
   background-color: rgba(121,118,118,.1)
 }
 
+.footer-list a, .footer-text, .footer-text a, .footer-bottom{
+  font: 71.5%/1 "DM Sans",sans-serif;
+  font-size:12px;
+  color:#797676; 
+  font-weight: 100;
+}
+
+
+
+.radios{
+  font: 71.5%/1 "DM Sans",sans-serif;
+  font-size: 12px;
+  color:#797676; 
+  font-weight: 200;
+}
+
+
 .footer-content{
   display: flex;
   flex-direction: row;
-  width: 98%;
+  width: 86%;
   max-width: 1330px;
   height: 70%;
   padding-left: 1%;
@@ -264,6 +300,9 @@ ul:hover{
 
 .footer-box-title{
   padding-bottom: 17px;
+  font-size: 12px;
+  color: black;
+  font-weight: 300;
 }
 
 
@@ -276,6 +315,7 @@ ul:hover{
   width: 188px;
   padding: 12px 65px 13px 10px;
 }
+
 
 .footer-bottom{
   padding-top: 4%;
@@ -291,6 +331,7 @@ ul:hover{
   height: 100vh;
   padding-top: 20px;
 }
+
 
 .item-holder{
   display:flex;
@@ -336,7 +377,7 @@ ul:hover{
   height: 100%;
   width: 50%;
   display: flex;
-  padding-top: 2.2%;
+  padding-top: 2.8%;
 }
 
 .product-description{
@@ -347,7 +388,8 @@ ul:hover{
 .product-description-inner{
   display:flex;
   flex-direction: column;
-  padding: 6% 0px 0% 17%;
+  padding: 6% 0px 0% 25%;
+  width:76%;
   height: 100%;
 }
 .logo img{
@@ -357,6 +399,9 @@ ul:hover{
 
 .product-name{
   padding-top: 3%;
+  font-size: 24px;
+  padding-bottom:3%;
+  color: #1d1d1d;
 }
 
 .image-carousel{
@@ -400,7 +445,7 @@ ul:hover{
   display:flex;
   height:93%;
   flex-direction: column;
-  padding-left: 85px;
+  padding-left: 21%;
   overflow:hidden;
 }
 
@@ -410,8 +455,128 @@ ul:hover{
 
 .next-button{
   width:98px;
-  height: 45px;
+  height: 30px;
   position:absolute;
-  bottom:32px;
+  bottom:23px;
   opacity: 0.7;
+  border:none;
+}
+
+.social-icons{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  left: -2px;
+}
+
+.social-icons a{
+  padding: 0px 2% 0px 2%;
+}
+
+.sign-up-button{
+  background-color: black; 
+  color:white;
+  font-family:  "DM Sans",sans-serif;
+  font-size: 12px;
+  width: 75px;
+  height: 41.5px;
+  border: none;
+}
+
+
+.footer-input-email{
+  height: 16px;
+  width: 185px;
+  padding: 12px 0 13px 10px;
+}
+
+label{
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+input[type="radio"]{
+  height: 13px;
+  width: 13px;
+  vertical-align: middle;
+  margin-top:0;
+}
+
+.product-price{
+  font-size: 24px;
+  color: #1d1d1d;
+}
+
+.after-pay, .after-pay a{
+  font-size: 12px;
+  color: #797676;
+  font-style: italic;
+}
+
+.after-pay img{
+  vertical-align: bottom;
+}
+
+.product-color{
+  font-size: 14px;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  color: #1d1d1d;
+}
+.size-selector{
+  height: 50%;
+}
+
+.size-selector select{
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  padding: 0 7% 0 9%;
+  width: 93%;
+  height: 100%;
+  font-family:  "DM Sans",sans-serif;
+}
+
+.size-selector form{
+  height: 14%;
+}
+
+.size-link{
+  padding: 5% 0 7% 0;
+  font-size:.85vw;
+}
+
+.add-to-bag, .pick-up{
+  height: 14%;
+  width: 93%;
+  padding-bottom: 5%;
+}
+
+.add-to-bag button{
+  background-color: black;
+  color: white;
+  border: 1px solid #e2e2e2;
+}
+
+.pick-up button{
+  background-color: white;
+  opacity: 0.7;
+  border: 1px solid #e2e2e2;
+}
+
+.size-selector button{
+  height: 100%;
+  width: 100%;
+}
+
+.color-size-text{
+  display: flex; 
+  text-align: center;
+  flex-direction: column;
+  width: 93%;
+}
+.color-size-text p{
+  margin:0;
+  color: #1d1d1d;
+  font-size: 14px;
+  padding-bottom: 5%;
 }
