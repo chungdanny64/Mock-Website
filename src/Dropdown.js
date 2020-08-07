@@ -38,8 +38,8 @@ class Dropdown extends Component{
             this.state.title !== "" ? 
 
             <div className = 'item-box' >
-                <div className = 'title-holder'>
-                    <Link to = "/NotFound"><b>{this.state.title}</b>  </Link> 
+                <div className = 'title-holder'style = {{fontWeight: '500', fontFamily: "'DM Sans',sans-serif"}}>
+                    <Link to = "/NotFound">{this.state.title}  </Link> 
                 </div>       
                 <br></br>
                     {this.display()}

@@ -7,6 +7,7 @@ import Bag from './Search_Images/Bag.png'
 import Account from './Search_Images/Account.png'
 import Flag from './Search_Images/Flag.png'
 import Location from './Search_Images/Location.png'
+import magnifier from './Search_Images/magnifier.png'
 
 
 
@@ -47,9 +48,9 @@ class Searchbar extends Component{
                                 </div>
 
                                 <div className = 'right-header'>
-                                    <form>
-                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px'}}></input>
-                                        <button type="submit">M</button>
+                                    <form >
+                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px', borderTop:'none',borderLeft:'none',borderRight:'none'}}></input>
+                                        <img src ={magnifier} style ={{width:'35px', verticalAlign : 'middle'}}></img>
                                     </form>
                                     <a href = 'http://localhost:3000/NotFound'>
                                         <img src = {Heart} alt = 'heart'></img>
@@ -73,6 +74,7 @@ class Searchbar extends Component{
                                             <div className = 'drop-down-content'>
                                                 <img src="https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw32b6e4f2/2020/floorsets/07/30/megamens.jpg"
                                                 alt = 'Men-pic-1'></img>
+                                               
                                             </div>
                                             <div className = 'drop-down-content'>
                                                 <Dropdown title= {'CLOTHING'}
@@ -124,8 +126,9 @@ class Searchbar extends Component{
                                         <div className= 'drop-down'>    
 
                                             <div className = 'drop-down-content'>
-                                                <img src="https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw30bdec05/2020/floorsets/07/30/megawomens.jpg"
-                                                alt = 'Women-pic-1'></img>
+                                                 <Link to ='/NotFound'> <img src="https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw30bdec05/2020/floorsets/07/30/megawomens.jpg"
+                                                alt = 'Women-pic-1'></img></Link>
+                                               
                                             </div>
                                             <div className = 'drop-down-content'>
                                                 <Dropdown title= {'CLOTHING'}
@@ -178,8 +181,9 @@ class Searchbar extends Component{
                                         <div className = 'drop-down'>
                                             <div className = 'drop-down-content'>
                                                     Men
-                                                    <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwfe9d9a9c/2020/floorsets/07/30/megamensdenim.jpg'
-                                                    alt = 'Jean-pic-2'></img>
+                                                    <Link to ='/NotFound'> <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwfe9d9a9c/2020/floorsets/07/30/megamensdenim.jpg'
+                                                    alt = 'Jean-pic-2'></img></Link>
+                                                   
                                                 </div>
 
                                                 <div className = 'drop-down-content'>
@@ -202,14 +206,15 @@ class Searchbar extends Component{
 
                                                 <div className = 'drop-down-content'>
                                                     Women
-                                                    <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw2c6f3b8b/2020/floorsets/07/30/megawomensdenim.jpg'
-                                                    alt = 'Jean-pic-2'></img>
+                                                    <Link to ='/NotFound'><img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw2c6f3b8b/2020/floorsets/07/30/megawomensdenim.jpg'
+                                                    alt = 'Jean-pic-2'></img></Link>
+                                                    
                                                 </div>
 
                                                 <div className = 'drop-down-content'>
                                                     <Dropdown title= {'SHOP BY FIT'} 
                                                             items={[ 
-                                                                'Mom Jeans' , 'Straigh Leg Jeans', 'Jeggings', 
+                                                                'Mom Jeans' , 'Straight Leg Jeans', 'Jeggings', 
                                                                 'Boyfriend Jeans' , 'Slim Fit Jeans', 'Shop All'
                                                     ]}/>
 
@@ -234,9 +239,9 @@ class Searchbar extends Component{
                                         
                                             <div className = 'drop-down'>
                                                 <div className = 'drop-down-content'>
-                                                    
-                                                    <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwba8191fc/2020/floorsets/07/05/megamensswim.jpg'
-                                                    alt = 'Swim-pic-1'></img>
+                                                    <Link to ='/NotFound'>  <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwba8191fc/2020/floorsets/07/05/megamensswim.jpg'
+                                                    alt = 'Swim-pic-1'></img></Link>
+                                                  
                                                 </div>
 
                                                 <div className = 'drop-down-content'>
@@ -250,15 +255,15 @@ class Searchbar extends Component{
                                                 <div className = 'drop-down-content'>
                                                     <Dropdown title= {'TOP BRANDS'} 
                                                             items={[ 
-                                                                'PacSun', 'Modern Amusement' , 'South Beanch', 'Hurley'
+                                                                'PacSun', 'Modern Amusement' , 'South Beach', 'Hurley'
                                                     ]}/>
 
                                                 </div>
 
                                                 <div className = 'drop-down-content'>
+                                                    <Link to ='/NotFound'><img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwc9c16956/2020/floorsets/07/23/megawomensswim.jpg'
+                                                    alt = 'Swim-pic-2'></img></Link>
                                                     
-                                                    <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dwc9c16956/2020/floorsets/07/23/megawomensswim.jpg'
-                                                    alt = 'Swim-pic-2'></img>
                                                 </div>
 
                                                 <div className = 'drop-down-content'>
@@ -289,8 +294,9 @@ class Searchbar extends Component{
                                         
                                         <div className = 'drop-down'>
                                             <div className  = 'drop-down-content'>
-                                                <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw22aaf237/2019/floorsets/08/28/megahome1.jpg'
-                                                alt = 'Home-pic-1'></img>
+                                                <Link to ='/NotFound'><img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw22aaf237/2019/floorsets/08/28/megahome1.jpg'
+                                                alt = 'Home-pic-1'></img></Link>
+                                                
                                             </div>
 
                                             <div className = 'drop-down-content'>
@@ -303,8 +309,9 @@ class Searchbar extends Component{
 
 
                                             <div className  = 'drop-down-content'>
-                                                <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw12bff516/2019/floorsets/08/28/megahome2.jpg'
-                                                alt = 'Home-pic-2'></img>
+                                                <Link to ='/NotFound'><img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw12bff516/2019/floorsets/08/28/megahome2.jpg'
+                                                alt = 'Home-pic-2'></img></Link>
+                                                
                                             </div>
 
 
@@ -326,14 +333,15 @@ class Searchbar extends Component{
                                         </div>
                                         
 
-                                        <div className = 'drop-down'>
+                                        <div className = 'drop-down' style = {{height: '448px'}}>
                                             <div className  = 'drop-down-content'>
                                                 <div style = {{borderBottom : '1px solid grey'}}>
                                                     MEN'S BRANDS
                                                 </div>
                                                 <br></br>
-                                                <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw12bff516/2019/floorsets/08/28/megahome2.jpg'
-                                                alt = 'brand-pic-1'></img>
+                                                <Link to ='/NotFound'><img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw12bff516/2019/floorsets/08/28/megahome2.jpg'
+                                                alt = 'brand-pic-1'></img></Link>
+                                                
                                             </div>
                                             
                                             <div className = 'drop-down-content'>
@@ -350,16 +358,23 @@ class Searchbar extends Component{
                                                 <Dropdown title = {''}
                                                 items = {[
                                                      'PacSun' ,'Playboy', 'Polo Ralph Lauren',
-                                                                'PS Basics', 'Reebok', 'RVCA', 'Santa Cruz', 'The North Face', 'Vans', 'Young & Reckless', 
-                                                                'Top Brands', 'Shop All Brands'
+                                                                'PS Basics', 'Reebok', 'RVCA', 'Santa Cruz', 'The North Face', 'Vans', 'Young & Reckless'
+                                                              
                                                 ]}/>
+
+                                                <br></br> 
+                                                <br></br>
+                                                
+
+                                                <Dropdown title = {''}
+                                                    items = {['Top Brands', 'Shop All Brands']}/>
                                             </div>
                                             
 
                                             <div className  = 'drop-down-content'>
                                                 <div className = 'brands-header'>
                                                     <div style = {{borderBottom : '1px solid grey'}}>
-                                                        WOMEN'S BRANDS
+                                                        <Link to ='/NotFound'>WOMEN'S BRANDS</Link>
                                                     </div>
                                                     <br></br>
                                                     <img src = 'https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw5c0f0e51/2020/floorsets/07/30/megawomensbrands.jpg'
@@ -376,6 +391,10 @@ class Searchbar extends Component{
                                                                 'Desert Dreamers' , 'Espirit', 'Free People', 'Guess', 'John Galt', 'Kendall & Kylie', 
                                                                 'LA Hearts', "Levi's", 'Lottie Moss'
                                                 ]}/>
+
+                                                
+
+                                                
                                             </div>
 
                                             <div className = 'drop-down-content'>
@@ -383,8 +402,15 @@ class Searchbar extends Component{
                                                 items = {[
                                                     'Me To We', 'MinkPink' , 'Modern Renewal',
                                                     'PacSun', 'Playboy', 'PS Basics', 'PS / LA', 'Rhythm', 'The North Face', 'Tommy Hilfiger', 
-                                                    'Vans', 'Top Brands', 'Shop All Brands'
+                                                    'Vans'
                                                 ]}/>
+                                                
+                                                <br></br> 
+                                                <br></br>
+                                                
+
+                                                <Dropdown title = {''}
+                                                    items = {['Top Brands', 'Shop All Brands']}/>
                                             </div>
                                         </div> 
                                     </div>
@@ -397,7 +423,7 @@ class Searchbar extends Component{
                                         
 
                                         <div className = 'drop-down'>
-                                            <div className = 'drop-down-content' >
+                                            <div className = 'drop-down-content-sale' style = {{paddingLeft:"18%", paddingRight: '2%'}} >
                                                 <Dropdown title= {"Men's Sale"}
                                                             items = {[
                                                                 'Markdowns - Up to 50% Off', 'Denim & Pants', 'Graphics & Knits' , 'Shirts',
@@ -413,7 +439,7 @@ class Searchbar extends Component{
 
 
 
-                                            <div className = 'drop-down-content' >
+                                            <div className = 'drop-down-content-sale' style = {{paddingLeft: '7%'}}>
                                                 <Dropdown title= {"Women's Sale"}
                                                             items = {[
                                                                 'Markdowns - Up to 50% Off', 'Denim & Pants' , 'Tops & Graphics', 'Sweaters',

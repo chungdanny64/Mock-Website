@@ -5,6 +5,10 @@ li{
   height: 24px
 }
 
+input{
+  outline:none;
+}
+
 body{
   font-family :  "DM Sans",sans-serif ;
 }
@@ -156,9 +160,7 @@ ul:hover{
   align-items: flex-start;
 }
 
-.item-box li a:hover{
-  font-weight: bold;
-}
+
 
 .drop-down-content{
   display: flex;
@@ -178,11 +180,15 @@ ul:hover{
 
 .brands-header{
   padding: 0px 2.5% 0px 2.5%;
-}
+ }
+
+ .brands-header div a{
+  color: grey; 
+ }
+
 .drop-down-content img{
-  height: 78%;
   width: 150px;
-  
+  cursor: pointer;
 }
 
 .item-box{
@@ -200,6 +206,8 @@ ul:hover{
   color: grey;
 }
 .title-holder{
+  width:80%;
+  left:0;
   border-bottom: 1px solid grey;
 }
 
@@ -228,8 +236,8 @@ ul:hover{
   padding-bottom: 19px;
 }
 
-.type:hover{
-  font-weight: 600;
+.type .search-link:hover a{
+  font-weight: 500;
 }
 
 .left-header{
@@ -493,6 +501,8 @@ ul:hover{
 }
 
 
+
+
 .footer-input-email{
   height: 16px;
   width: 185px;
@@ -589,3 +599,8 @@ input[type="radio"]{
   font-size: 14px;
   padding-bottom: 5%;
 }
+
+.drop-down-content-sale{
+  width: 15%;
+}
+
