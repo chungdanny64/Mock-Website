@@ -6,7 +6,7 @@ class DeadLink extends Component{
     render(){
         return(
             <div>
-                 <div className = 'top'>
+                 <div className = 'top' style = {{height: '100vh'}}>
                     <div className = 'top-of-bar'>
                         <div className = 'bar-content'>
                             Hello
@@ -18,7 +18,7 @@ class DeadLink extends Component{
                     </div>
                     
                     <Searchbar/>
-                    <div>
+                    <div style = {{height: '80%'}}>
                         Dead Link
                     </div>
                     <Footer/>

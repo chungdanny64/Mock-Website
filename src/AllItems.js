@@ -68,10 +68,11 @@ class AllItems extends Component{
                         </img>
                     </div>
                     
-                    <Searchbar/>    
-                    <div className = 'all-items'>
-                        {this.GetItems()}
-                    </div>
+                    <Searchbar/>  
+                        <div className = 'all-items'>
+                            {this.GetItems()}
+                        </div>
+                    
                     <Footer/>
                 </div>
                 

@@ -59,7 +59,6 @@ ul:hover{
   justify-content: center;
   height: 40px;
   width: 100%;
-  display: flex;
   position: sticky;
   top:0px;
   background-color: black;
@@ -345,9 +344,10 @@ ul:hover{
 
 
 .all-items{
+  height: 120vh;
   display:flex;
-  height: 100vh;
   padding-top: 20px;
+  width: 100%;
 }
 
 
