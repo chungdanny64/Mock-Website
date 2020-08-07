@@ -25,7 +25,7 @@ class Searchbar extends Component{
                             <div className = 'top-content'>
                                 <div className = 'left-header'>
                                     <a href = 'http://localhost:3000/NotFound'>
-                                        <img src= {Account} alt= 'login' style ={{  height : '20px', width: '20px'}} onClick = {<Link to='/NotFound'></Link>}>
+                                        <img src= {Account} alt= 'login' style ={{  height : '20px', width: '20px'}}>
                                         </img>
                                     </a>
 

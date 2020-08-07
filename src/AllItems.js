@@ -3,6 +3,7 @@ import Searchbar from './Searchbar'
 import Footer from './Footer'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import TopBar from './TopBar'
 
 
 class AllItems extends Component{
@@ -59,9 +60,7 @@ class AllItems extends Component{
             <div>
                 <div className = 'top'>
                     <div className = 'top-of-bar'>
-                        <div className = 'bar-content'>
-                            Hello
-                        </div>
+                        <TopBar/>
                     </div>
                     <div className = 'bottom-of-top-bar'>
                         <img src ='https://www.pacsun.com/on/demandware.static/-/Sites-pacsun-Library/default/dw0aa5b2cc/2020/reopen/store-d.png' alt ='logo' style= {{height: '99%'}}>

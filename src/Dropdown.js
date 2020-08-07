@@ -26,8 +26,8 @@ class Dropdown extends Component{
     }
 
     display(){
-        return this.state.categories.map(curr =>{
-            return <DropdownItem name = {curr}/>
+        return this.state.categories.map((curr,index) =>{
+            return <DropdownItem name = {curr} key = {index}/>
         })
     }
     render(){

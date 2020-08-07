@@ -158,6 +158,20 @@ class ItemPage extends Component{
 
                     </div>
                 </div>
+
+                <div className = 'review-container'>
+                    <div>
+                        REVIEWS
+                    </div>
+                    <div style ={{color:'#9b9b9b' , fontSize :'16px'}}>
+                        There are currently no reviews for this product
+                    </div>
+                    
+                    <button className = 'review-button' type = 'submit'>
+                        Write A Review
+                    </button> 
+                    
+                </div>
             </div>
         )
     }
