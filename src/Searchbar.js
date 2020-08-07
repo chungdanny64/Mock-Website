@@ -50,7 +50,7 @@ class Searchbar extends Component{
                                 <div className = 'right-header'>
                                     <form >
                                         <input type= 'text' placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px', borderTop:'none',borderLeft:'none',borderRight:'none'}}></input>
-                                        <img src ={magnifier} style ={{width:'35px', verticalAlign : 'middle'}}></img>
+                                        <img src ={magnifier} style ={{width:'35px', verticalAlign : 'middle'}} alt = 'magnifier'></img>
                                     </form>
                                     <a href = 'http://localhost:3000/NotFound'>
                                         <img src = {Heart} alt = 'heart'></img>

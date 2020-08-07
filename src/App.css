@@ -43,13 +43,14 @@ ul:hover{
   align-items: center;
   justify-content: center;
   border-top:1px solid white;
+  background-color: black;
   
 }
 
 
 .top{
-  height: 104px;
-  background-color: black;
+  height: 200vh;
+  background-color: white;
   flex-direction: column;
 }
 
@@ -275,7 +276,7 @@ ul:hover{
   padding-top: 49px;
   height:53vh;
   width: 100%;
-  background-color: rgba(121,118,118,.1)
+  background-color: rgba(121,118,118,.1);
 }
 
 .footer-list a, .footer-text, .footer-text a, .footer-bottom{
@@ -368,7 +369,7 @@ ul:hover{
 }
 
 .item-page{
-  height: 110vh;
+  height: 140vh;
   width: 100%;
   display: flex; 
   justify-content: center;
@@ -448,7 +449,7 @@ ul:hover{
   width: 100%;
 }
 .large-product-image img{
-  height: 93%;
+  height: 87%;
 }
 
 .image-carousel img{
@@ -460,7 +461,7 @@ ul:hover{
 
 .carousel{
   display:flex;
-  height:93%;
+  height:87%;
   flex-direction: column;
   padding-left: 21%;
   overflow:hidden;
@@ -474,9 +475,10 @@ ul:hover{
   width:98px;
   height: 30px;
   position:absolute;
-  bottom:23px;
+  bottom:0;
   opacity: 0.7;
   border:none;
+  outline: none;
 }
 
 .social-icons{
