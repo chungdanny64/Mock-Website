@@ -19,7 +19,7 @@ class AllItems extends Component{
     }
 
 
-
+    // gets all items in the database on mount
     componentDidMount(){
         axios.get('http://localhost:5000/item/')
             .then(res => {

@@ -6,6 +6,7 @@ import TopBar from './TopBar'
 class DeadLink extends Component{
     render(){
         return(
+            // displays a dead link page when a link is clicked
             <div>
                  <div className = 'top' style = {{height: '100vh'}}>
                     <div className = 'top-of-bar'>

@@ -28,6 +28,7 @@ class ItemPage extends Component{
     }
 
     componentDidMount(){
+        // obtains the data from the database and sets the state for the page
         axios.get('http://localhost:5000/item/' + this.props.item.match.params.id)
             .then(res =>{
                 this.setState({
@@ -52,9 +53,11 @@ class ItemPage extends Component{
         return e.toFixed(2)
     }
 
+    // image carousel
     show_images(place){
         let x = place
         let images = []
+        // sets the order for the image carousel and changes the order on button click
         for(let y = x; y < x+5;y ++){
             images.push(<img src = {this.state.images[y%6]} id = {y%6} onClick = {this.imageClick} alt = {'image' + y}></img>)
         }
@@ -62,11 +65,13 @@ class ItemPage extends Component{
     }
 
     clickButton(){
+        // changes the starting image index for the image carousel
         this.setState({
             index: this.state.index+1
         })
     }
     
+    // sets the clicked image as the top image in carousel and makes it the big image
     imageClick(event){
         console.log(event.currentTarget.id)
         this.setState({

@@ -43,6 +43,7 @@ class TopBar extends Component{
         })
     }   
 
+    // changes the item being displayed on the carousel in the top bar to the previous entry
     back(){
         let x = this.state.pos
         if(x === 0){
@@ -57,6 +58,7 @@ class TopBar extends Component{
         }
     }
 
+    // changes the item being displayed on the carousel in the top bar to the next entry
     next(){
         console.log('hello')
         let x = this.state.pos

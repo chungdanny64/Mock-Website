@@ -16,6 +16,9 @@ class Searchbar extends Component{
  
     render(){
         
+        // Dropdown component is for every category in the drop down menu
+        // class drop down holds each Dropdown component that is passed in
+        // drop down class is used to section each portion of the drop down menu
 
         return(
             <div className = 'search-holder'>
