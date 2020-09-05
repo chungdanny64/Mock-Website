@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+button{
+  font-family: inherit;
+  margin:0;
+  height: 20px;
+  width: 35px;
+  border:none;
+  background-color:white;
+  outline: none;
+}
 li{
   list-style-type: none;
   height: 24px

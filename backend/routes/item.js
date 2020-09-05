@@ -12,6 +12,18 @@ router.route('/').get((req,res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// :id is anything that comes after the slash, not just an id number
+router.route('/search/:id').get((req,res) => {
+    let a = req.params.id
+    // .find() gets all the users from the mongoDB database that contains the string 
+    // not case sensitive using regex 
+    Item.find({name : {'$regex' : a, '$options' : 'i' }})
+    // when it finds it THEN it returns the users in json format 
+    .then(items => res.json(items))
+    // if there is an error then display the message
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
 
 
 router.route('/:id').get((req,res) =>

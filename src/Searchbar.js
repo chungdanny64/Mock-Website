@@ -10,10 +10,36 @@ import Location from './Search_Images/Location.png'
 import magnifier from './Search_Images/magnifier.png'
 
 
-
 class Searchbar extends Component{
 
- 
+
+constructor(){
+    super()
+
+    this.state = {search : '',
+                list_of_items: []}
+    this.handleChange = this.handleChange.bind(this)
+}
+
+
+handleChange(event){
+    const {name, value} = event.target
+    this.setState({[name] : value})
+    console.log(this.state.search)
+}
+
+search = (event) =>{
+    console.log(this.state.search)
+    // use prevent default to prevent reloading the page
+}
+
+
+
+
+
+
+
+
     render(){
         
         // Dropdown component is for every category in the drop down menu
@@ -52,8 +78,10 @@ class Searchbar extends Component{
 
                                 <div className = 'right-header'>
                                     <form >
-                                        <input type= 'text' placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px', borderTop:'none',borderLeft:'none',borderRight:'none'}}></input>
-                                        <img src ={magnifier} style ={{width:'35px', verticalAlign : 'middle'}} alt = 'magnifier'></img>
+                                        <input type= 'text' name = 'search' value = {this.state.search} onChange = {this.handleChange} placeholder= 'search...' style ={{width: '105px', fontFamily: '"DM Sans",sans-serif', fontSize:'12px', borderTop:'none',borderLeft:'none',borderRight:'none'}}></input>
+                                        <button onClick = {this.search}>  
+                                            <Link to = {{pathname: this.state.search === ''? '/':'/search/' + this.state.search, state : {item : this.state.search}}}><img src ={magnifier} style ={{width:'35px', verticalAlign : 'middle'}} alt = 'magnifier'></img></Link>
+                                        </button> 
                                     </form>
                                     <a href = 'http://localhost:3000/NotFound'>
                                         <img src = {Heart} alt = 'heart'></img>
