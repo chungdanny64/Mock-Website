@@ -20,7 +20,7 @@ class Dropdown extends Component{
 
     // takes in the categories that will be displayed as props and sets it to the arrays used for display 
     componentDidMount(){
-            console.log("added something");
+            console.log("changed again");
             this.setState({
                 categories: this.props.items,
                 title : this.props.title,
